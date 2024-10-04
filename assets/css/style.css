@@ -118,9 +118,12 @@ header{
         padding-top: 10px; 
     }
 
-    .card img {
-        width: 140px;
-        height: 140px;
+    .card {
+        width: 50px;
+        height: 60px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -139,9 +142,13 @@ header{
         padding-top: 10px;
     }
 
-    .card img {
-        width: 150px;
-        height: 150px;
-        row-gap: 2px;
+    .card {
+        width: 60px;
+        height: 70px;
+    }
+    #startgame,
+    #playagain {
+        top: 40%;
+        transform: translate(-50%, -50%);
     }
 }
