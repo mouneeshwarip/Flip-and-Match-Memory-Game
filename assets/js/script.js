@@ -1,17 +1,34 @@
 /*jshint esversion: 6 */
 
-document.addEventListener('DOMContentLoaded', function(){
-    //References to the buttons and other dom elements
-    const startgamebtn= document.getElementById('startgamebtn');
-    const playagainbtn=document.getElementById('playagainbtn');
-    const cardcontainer=document.querySelector('.card-container');
-    const cards=document.querySelectorAll('.card');
-    const endgamebtn=document.getElementById('endgamebtn');
+// Wait for the DOM to finish loading before running the game
+// Get the button elements and add event listeners to them
+document.addEventListener('DOMContentLoaded', function() {
+    // Getting all the button elements
+    const startgamebtn = document.getElementById('startgamebtn');
+    const playagainbtn = document.getElementById('playagainbtn');
+    const endgamebtn = document.getElementById('endgamebtn');
     const howToPlaybtn = document.getElementById('howToPlaybtn');
-    const instructions = document.getElementById('instructions');
-    let score=0;
-    let timer=120; //setting initial timer to 2 mins(2 mins * 60 secs)
-}
+
+    // Event listeners for buttons
+    startgamebtn.addEventListener('click', function() {
+        startgame();
+        startgamebtn.style.display = 'none'; 
+    });
+
+    playagainbtn.addEventListener('click', function() {
+        location.reload(); // Reloading the page to restart the game
+    });
+
+    endgamebtn.addEventListener('click', function() {
+        endgame();
+    });
+
+    howToPlaybtn.addEventListener('click', function() {
+        instructions.classList.toggle('hidden'); // Show/hide instructions
+    });
+});
+
+
 
 function shuffle() {
 
