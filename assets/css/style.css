@@ -87,11 +87,25 @@ header{
     border-radius: 8px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     background-color: rgba(197, 180, 180, 0.773);
-}   
+}  
 #button-container {
     display: flex;
     justify-content: center;
     margin-bottom: 10px; 
+}
+#howToPlaybtn{
+    background-color:black ;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+#howToPlaybtn:hover{
+    background-color:#78c08f ;
+
 }
 
 #endgame{
