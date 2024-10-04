@@ -88,6 +88,11 @@ header{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     background-color: rgba(197, 180, 180, 0.773);
 }   
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+}
 
 #endgame{
     text-align: center;
