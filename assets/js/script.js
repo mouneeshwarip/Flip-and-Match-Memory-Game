@@ -26,14 +26,32 @@ document.addEventListener('DOMContentLoaded', function() {
     howToPlaybtn.addEventListener('click', function() {
         instructions.classList.toggle('hidden'); // Show/hide instructions
     });
+
 });
 
+let score=0;
+let timer=120; //setting initial timer to 2 mins(2 mins * 60 secs)
+const cardcontainer=document.querySelector('.card-container');
+const cards=document.querySelectorAll('.card');
 
 
-function shuffle() {
-
+//shuffling an array using Fisher-Yates algorithm
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
 }
+// Converting NodeList to array
+const cardsArray = Array.from(cards);
 
+// Shuffling the array of cards
+shuffle(cardsArray);
+
+// Appending shuffled cards back to the card container
+cardsArray.forEach(card => {
+    cardcontainer.appendChild(card);
+});
 function updatescore() {
     
 }
@@ -50,8 +68,9 @@ function updatetimeinterval() {
     
 }
 
-function setBacksideImage() {
-    
+
+function setBacksideImage(cardElement) {
+ 
 }
 
 function handlecardclick() {

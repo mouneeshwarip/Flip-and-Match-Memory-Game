@@ -75,9 +75,7 @@ header{
     object-fit: cover; 
     text-align: center;
 }
-.card .front{
-    display: none;
-}
+
 #instructions{
     /*padding-top: 10px;*/
     padding: 10px;
