@@ -33,6 +33,9 @@ let score=0;
 let timer=120; //setting initial timer to 2 mins(2 mins * 60 secs)
 const cardcontainer=document.querySelector('.card-container');
 const cards=document.querySelectorAll('.card');
+let gamestarted = false; // variable to track if the game has started
+let flippedCards = []; // Array to store flipped cards
+let intervalId;
 
 
 //shuffling an array using Fisher-Yates algorithm
@@ -82,7 +85,22 @@ cards.forEach(function(card) {
     setBacksideImage(card);
 });
 
-function handlecardclick() {
+function handlecardclick(event) {
+    // do nothing  if the game has not started
+    if (!gamestarted) {
+        return; 
+    }
+    // Flipping the clicked card
+    event.currentTarget.classList.toggle('flipped');
+    // Remove the event listener for this card
+    event.currentTarget.removeEventListener('click', handlecardclick);
+
+    // HTML content of the clicked card
+    let cardContent = event.currentTarget.innerHTML;
+    
+    // Adding the HTML content of the clicked card to the array of flipped cards
+    flippedCards.push({ element: event.currentTarget, content: cardContent });
+
     
 }
 
