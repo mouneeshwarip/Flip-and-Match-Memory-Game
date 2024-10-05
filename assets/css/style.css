@@ -9,13 +9,13 @@ body{
 header{
     padding-top: 5px;
     text-align: center;
-    /*margin-bottom: 20px;*/
+    margin-bottom: 20px;
 }
 .controls{
     text-align: center;
     position: absolute;
-    padding-top: 5px;
-    top: 90px;
+    padding-top: 2px;
+    /*top: 75px;*/
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -34,6 +34,7 @@ header{
     top: 32%; 
     left: 50%; 
     transform: translate(-50%); 
+    margin-top: 20px;
 }
 /*Button styles*/
 #startgamebtn,
@@ -101,14 +102,14 @@ header{
     margin-bottom: 10px; 
 }
 #howToPlaybtn{
-    background-color:black ;
+    background-color: rgba(197, 180, 180, 0.773); 
     border-radius: 10px;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     font-size: 14px;
     margin-top: 20px;
-    color: whitesmoke;
+    color: rgb(6, 6, 6);
 }
 #howToPlaybtn:hover{
     background-color:#78c08f ;
@@ -124,8 +125,8 @@ header{
     
 }
 #endgamebtn{
-    background-color:black ;
-    color: whitesmoke;
+    background-color: rgba(197, 180, 180, 0.773); 
+    color: rgb(14, 13, 13);
     border-radius: 10px;
     border: none;
     padding: 5px 10px;
@@ -135,26 +136,31 @@ header{
 #endgamebtn:hover{
     background-color:#78c08f ;
 }
-/* Extra Small Devices (Phones) */
-@media (max-width: 575.98px) {
-    .card-container {
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, auto);  
-    }
-   .card img {
-        width: 90px;
-        height: 120px;
-    }
-}
+
 /* Small Devices (Tablets) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     body {
         font-size: 14px;
         text-align: center;
     }
+    .card-container {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        max-width: 400px;
+        margin: 0 auto;
+        padding-top: 5px; 
+    }
+
+    .card {
+        width: 40px;
+        height: 50px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
    
 
-   .card-container {
+   /*.card-container {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, auto);  
     }
@@ -163,7 +169,7 @@ header{
     .card img {
         width: 120px;
         height: 120px;
-    }
+    }*/
 }
 
 /* Medium Devices (Tablets) */
@@ -214,7 +220,7 @@ header{
 /* Large Devices (Laptops and Desktops) */
 @media (min-width: 992px) {
     body {
-        font-size: 25px;
+        font-size: 18px;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -234,11 +240,11 @@ header{
     }
     #startgame,
     #playagain {
-        top: 40%;
+        top: 10%;
         transform: translate(-50%, -50%);
     }
     #howToPlaybtn {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #instructions p {
