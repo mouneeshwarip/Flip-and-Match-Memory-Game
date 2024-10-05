@@ -185,8 +185,21 @@ function playagain(){
     
 }
 
-function endgame() {
+ //Function to end the game
+ function endgame(){
+    //Hiding the timer
+    const timerDisplay = document.getElementById('timer');
+    timerDisplay.style.display = 'none';
 
+    cardcontainer.style.display = 'none';
+    // Hiding the instructions
+    const instructions = document.getElementById('instructions');
+    instructions.style.display = 'none';
+    // Showing the "Play Again" button
+    playagainbtn.style.display = 'block';
+    howToPlaybtn.style.display = "none";
+    // Hiding the "End Game" button
+    endgamebtn.style.display = 'none';
 }
 
 function resetGame() {
