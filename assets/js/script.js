@@ -70,8 +70,17 @@ function updatetimeinterval() {
 
 
 function setBacksideImage(cardElement) {
- 
-}
+    const backsideImage = document.createElement('img');
+    backsideImage.src = 'assets/images/backside.jpg'; 
+    backsideImage.alt = 'Football'; 
+    backsideImage.classList.add('back'); 
+    cardElement.appendChild(backsideImage);
+ }
+
+// Looping through each card and set the backside image
+cards.forEach(function(card) {
+    setBacksideImage(card);
+});
 
 function handlecardclick() {
     
