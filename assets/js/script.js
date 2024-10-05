@@ -101,6 +101,41 @@ function handlecardclick(event) {
     // Adding the HTML content of the clicked card to the array of flipped cards
     flippedCards.push({ element: event.currentTarget, content: cardContent });
 
+   // Checking if two cards are flipped
+   if (flippedCards.length === 2) {
+    // Disabling further card clicks until the match is checked
+    cards.forEach(function(card) {
+        card.removeEventListener('click', handlecardclick);
+    });
+
+    // to get the contents of the two flipped cards
+    let content1 = flippedCards[0].content;
+    let content2 = flippedCards[1].content;
+
+    // if the contents of the two flipped cards match
+    if (content1 === content2) {
+        //class to indicate that they should not flip back  if the cards match
+        flippedCards.forEach(function(card) {
+            card.element.classList.add('matched');
+            // Re-enabling card clicks after flipping back
+            cards.forEach(function (card) {
+                if (!card.classList.contains('matched')) {
+                    card.addEventListener('click', handlecardclick);
+                }
+            });
+            // Clearing the array of flipped cards
+            flippedCards = [];
+    });
+    score++;
+                updatescore(); 
+
+                //ending the game if the score is 10
+                if (score === 10) {
+                    endgame();
+                }
+            } 
+}        
+
     
 }
 
