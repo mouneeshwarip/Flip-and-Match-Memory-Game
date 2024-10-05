@@ -183,7 +183,11 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInterval(intervalId); // to stop the timer
         //Hiding the timer
         const timerDisplay = document.getElementById('timer');
-        timerDisplay.style.display = 'none';
+        const scoreDisplay = document.getElementById('score');
+
+        // Stop updating the timer, but display the final time
+        timerDisplay.textContent = formatTime(timer);
+        scoreDisplay.textContent = score;
 
         cardcontainer.style.display = 'none';
         // Hiding the instructions
