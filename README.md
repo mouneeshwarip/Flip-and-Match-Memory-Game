@@ -86,7 +86,7 @@ This website includes various features that enhance its usability and promote a 
 
   - The Game screen includes buttons to start the game and the instructions.
 
-    ![Gameboard](assets/documentation/images/game start.png)
+    ![Gameboard] (assets/documentation/images/gamestart.png)
 
   - When the "Start Game" button is clicked, the game board along with score and timer controls appear, allowing players to 
     interact with clickable cards. Additionally, two more buttons, "How to Play?" and "End Game", will be available for players to access instructions and end the game respectively.
@@ -97,6 +97,7 @@ This website includes various features that enhance its usability and promote a 
    - When the user matches all pairs, ends the game prematurely, or when the time runs out, the "Play Again" button will appear, allowing players to restart the game.
 
    ![Playagain_button](assets/documentation/images/play_again.png)
+
 ## Resubmission Notesa
 
    - My original deadline was 05.10.2024, but I faced several challenges, including deployment issues and technical difficulties. I requested an extension, but unfortunately, I received delayed responses.
@@ -158,10 +159,12 @@ All the points features mentioned below were tested manually.
 
 - The issue where the timer wasn't appearing and wasn't stopping correctly has been resolved. The fix involved ensuring the timer is stopped by calling clearInterval(intervalId), and the final timer value is displayed. 
 - ![Fixed Bug results](assets/documentation/images/timer_bug.png)
+
 - The overlapping issue with the "Start Game" button was resolved by adjusting its position, specifically by removing the position: absolute property.
-- ![Result] (assets/documentation/images/startgame btn bug.png)
+- ![Result] (assets/documentation/images/startgamebtn_bug.png)
+
 - I encountered a deployment issue where the "Save" button was not enabled after selecting main → root. After a long struggle and spending a day troubleshooting, I was finally able to resolve it successfully.
-- ![DeploymentRes] (assets/documentation/images/Screenshot deployment page.png)
+- ![Deployment] (assets/documentation/images/Screenshot_deploymentpage.png)
 
 ## Deployment
 
