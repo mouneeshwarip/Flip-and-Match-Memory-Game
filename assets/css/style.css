@@ -172,6 +172,7 @@ header{
         font-size: 23px;
         margin: 0;
         padding: 0;
+        text-align: center;
     }
 
     #howToPlaybtn {
@@ -213,7 +214,9 @@ header{
 /* Large Devices (Laptops and Desktops) */
 @media (min-width: 992px) {
     body {
-        font-size: 18px;
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
         text-align: center;
     }
     .card-container {
