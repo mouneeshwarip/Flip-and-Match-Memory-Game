@@ -32,8 +32,9 @@ Memory Card Game, also known as Concentration or Pairs, is a popular card game t
 
 Challenge yourself by trying to beat your best time.
 
-![To get started with the memory challenge game, simply visit: https://mouneeshwarip.github.io/Flip-and-Match--Memory-Challenge/ ]
-![Responsice Mockup](assets/images/responsive_img.png)
+![To get started with the memory challenge game, simply visit: https://mouneeshwarip.github.io/Flip-and-Match-Memory-Game/]
+
+![Responsice Mockup](assets/documentation/images/amiresponsive.png)
 
 ## Key Project Goals
 
@@ -73,7 +74,7 @@ Develop a user-friendly game interface that:
   - The text color is whitesmoke with black background.
   - The background colors of buttons consist of black, transitioning to light green when hovered over.
 
-   ![color_palette](assets/images/colorpalette.png)
+   ![color_palette](assets/documentation/images/colorcode.png)
 
    ## Features 
 
@@ -85,18 +86,18 @@ This website includes various features that enhance its usability and promote a 
 
   - The Game screen includes buttons to start the game and the instructions.
 
-    ![Gameboard](assets/images/gamescreen.png)
+    ![Gameboard](assets/documentation/images/game start.png)
 
   - When the "Start Game" button is clicked, the game board along with score and timer controls appear, allowing players to 
     interact with clickable cards. Additionally, two more buttons, "How to Play?" and "End Game", will be available for players to access instructions and end the game respectively.
    
-    ![Gamestarts](assets/images/gamestarted.png)
+    ![Gamestarts](assets/documentation/images/cards_flipped.png)
     
  - __Play again button__
    - When the user matches all pairs, ends the game prematurely, or when the time runs out, the "Play Again" button will appear, allowing players to restart the game.
 
-   ![Playagain_button](assets/images/playagain.png)
-## Resubmission Notes
+   ![Playagain_button](assets/documentation/images/play_again.png)
+## Resubmission Notesa
 
    - My original deadline was 05.10.2024, but I faced several challenges, including deployment issues and technical difficulties. I requested an extension, but unfortunately, I received delayed responses.
 
@@ -124,22 +125,22 @@ This website includes various features that enhance its usability and promote a 
 ### HTML Validator
 
 No Errors were returned when passing through W3C Markup Validator 
-* [W3C Markup Validator](https://validator.w3.org/#validate_by_input)-  ![Website Result](assets/images/html_validator.png)
+* [W3C Markup Validator](https://validator.w3.org/#validate_by_input)-  ![Website Result](assets/documentation/images/html_validator.png)
 
 ### CSS Validator
 
 No Errors were returned when passing through W3C CSS Validator 
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)-  ![Website Result](assets/images/css_validator.png)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)-  ![Website Result](assets/documentation/images/css_validator.png)
 
 ### JavaScript Validator
 
 No Errors were returned when passing through  [Jshint](https://jshint.com/).
 -  script.js
 
-* ![Website Result](assets/images/jshint.png)
+* ![Website Result](assets/documentation/images/jshint.png)
 
 Google Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on both Desktop and Mobile devices.
-- [Website Result] !(assets/images/lighthouse_perf.png)
+- ![Website Result](assets/documentation/images/lighthouse.png)
 
 The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Firefox on desktop, and again on Google Chrome.
 * Responsive on all device sizes.
@@ -153,13 +154,14 @@ All the points features mentioned below were tested manually.
 - Highest win streaks for different levels are upgraded when expected.
 - All game modes function as expected.
 
-## Unfixed Bugs
-
-- I couldn't remove the 'timer' text when the game ended prematurely or when the user finished the game before the time was up. Debugging and fixing this issue will be a priority for future updates.
-
 ## Fixed Bugs
 
-- I dedicated significant effort to resolving a critical bug wherein, upon game initiation, cards could be clicked multiple times, resulting in erroneous score updates. To rectify this issue, I removed the event listener for card clicks outside of the main function and reinstated it only when the cards were flipped back.
+- The issue where the timer wasn't appearing and wasn't stopping correctly has been resolved. The fix involved ensuring the timer is stopped by calling clearInterval(intervalId), and the final timer value is displayed. 
+- ![Fixed Bug results](assets/documentation/images/timer_bug.png)
+- The overlapping issue with the "Start Game" button was resolved by adjusting its position, specifically by removing the position: absolute property.
+- ![Result] (assets/documentation/images/startgame btn bug.png)
+- I encountered a deployment issue where the "Save" button was not enabled after selecting main → root. After a long struggle and spending a day troubleshooting, I was finally able to resolve it successfully.
+- ![DeploymentRes] (assets/documentation/images/Screenshot deployment page.png)
 
 ## Deployment
 
@@ -190,5 +192,4 @@ All the points features mentioned below were tested manually.
 
  - I, the author, have written all the content on the website.
 
-## Special Thanks
 

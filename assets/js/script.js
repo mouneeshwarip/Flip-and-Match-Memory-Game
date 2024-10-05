@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const playagainbtn = document.getElementById('playagainbtn');
     const endgamebtn = document.getElementById('endgamebtn');
     const howToPlaybtn = document.getElementById('howToPlaybtn');
+    const instructions = document.getElementById('instructions');
     let score = 0;
     let timer = 120; //setting initial timer to 2 mins(2 mins * 60 secs)
     const cardcontainer = document.querySelector('.card-container');
@@ -198,14 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
         howToPlaybtn.style.display = "none";
         // Hiding the "End Game" button
         endgamebtn.style.display = 'none';
-    }
-
-    function resetGame() {
-
-    }
-
-    function checkGameEnd() {
-
     }
 
     //Event listener for startgame,endgame, playagain, cardflips
