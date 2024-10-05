@@ -177,8 +177,12 @@ function startgame() {
     gamestarted = true; 
 }
 
-function playagain() {
-
+function playagain(){
+        
+    instructions.style.display = 'none';
+    endgamebtn.style.display = 'none';
+    howToPlaybtn.style.display = 'none';
+    
 }
 
 function endgame() {
