@@ -114,6 +114,9 @@ header{
     background-color:#78c08f ;
 
 }
+.hidden{
+    display: none;
+}
 
 #endgame{
     text-align: center;
@@ -166,8 +169,29 @@ header{
 /* Medium Devices (Tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     body {
-        font-size: 16px;
-        text-align: center;
+        font-size: 23px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #howToPlaybtn {
+        font-size: 20px;
+    }
+
+    #instructions {
+        margin-top: 5px;
+    }
+
+    #instructions p {
+        font-size: 15px;
+    }
+
+    #endgame {
+        margin-top: 5px;
+    }
+
+    #endgamebtn {
+        font-size: 20px;
     }
     .card-container {
         grid-template-columns: repeat(5, 1fr);
@@ -184,24 +208,6 @@ header{
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    #instructions {
-        margin-top: 5px;
-       
-    }
-    #howToPlaybtn {
-        font-size: 20px;
-    }
-    #instructions p {
-        font-size: 15px;
-    }
-    #endgame {
-        margin-top: 5px;
-    }
-
-    #endgamebtn {
-        font-size: 20px;
-    }
-
 }
 
 /* Large Devices (Laptops and Desktops) */
