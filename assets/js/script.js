@@ -33,20 +33,36 @@ document.addEventListener('DOMContentLoaded', function () {
         cardcontainer.appendChild(card);
     });
 
+    //Function to update score
     function updatescore() {
-
+        const scoreDisplay = document.getElementById('score');
+        scoreDisplay.textContent = score;
     }
 
-    function updatetimer() {
-
+    //Function to update timer
+    function updatetimer(){
+        const timerdisplay=document.getElementById('timer');
+        timerdisplay.textContent=formatTime(timer);
+    }
+    
+    function formatTime(seconds) {
+        // Formatting the time as mm:ss
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
     }
 
-    function formatTime() {
-
-    }
-
-    function updatetimeinterval() {
-
+    //Function to start the timer
+    function updatetimeinterval(){
+        if (timer>0) {
+              timer--;
+              updatetimer();
+        }
+        else{
+            //Game over when timer reaches 0
+            clearInterval(intervalId);
+            endgame();
+        }
     }
 
 
