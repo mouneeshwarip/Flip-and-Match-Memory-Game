@@ -96,7 +96,15 @@ This website includes various features that enhance its usability and promote a 
    - When the user matches all pairs, ends the game prematurely, or when the time runs out, the "Play Again" button will appear, allowing players to restart the game.
 
    ![Playagain_button](assets/images/playagain.png)
+## Resubmission Notes
 
+   - My original deadline was 05.10.2024, but I faced several challenges, including deployment issues and technical difficulties. I requested an extension, but unfortunately, I received delayed responses.
+
+   - Despite these setbacks, I continued working diligently on my project. I have addressed the areas mentioned in the assessment feedback, made frequent commits with detailed messages, and even resolved some issues that were previously unfixed.
+
+   - As a mother and a working professional, I have had to manage multiple responsibilities, which impacted my ability to meet the original deadline. I kindly request that you consider my circumstances and grant an assessment of my project. I have worked hard to ensure all feedback has been implemented and resolved.
+
+   - Thank you for your understanding and consideration.
 
 ## Game Play
 
@@ -135,3 +143,52 @@ Google Lighthouse was used to test Performance, Best Practices, Accessibility an
 
 The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Firefox on desktop, and again on Google Chrome.
 * Responsive on all device sizes.
+
+## Manual Testing
+
+All the points features mentioned below were tested manually.
+
+- All buttons function correctly, redirect user as intended.
+- Timer works properly and Best time is updated when expected.
+- Highest win streaks for different levels are upgraded when expected.
+- All game modes function as expected.
+
+## Unfixed Bugs
+
+- I couldn't remove the 'timer' text when the game ended prematurely or when the user finished the game before the time was up. Debugging and fixing this issue will be a priority for future updates.
+
+## Fixed Bugs
+
+- I dedicated significant effort to resolving a critical bug wherein, upon game initiation, cards could be clicked multiple times, resulting in erroneous score updates. To rectify this issue, I removed the event listener for card clicks outside of the main function and reinstated it only when the cards were flipped back.
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+## Credits 
+
+### Code
+
+* [W3Schools](https://www.w3schools.com/).
+
+* [Stack Overflow](https://stackoverflow.com/).
+
+* Some Youtube videos
+
+### Icons
+
+ - Favicon folder of various sizes was created via [Favicon generator](https://www.favicon-generator.org/).
+
+### Media
+
+ - Images as the card Values and the background image are downloaded from Google.
+ - [ui.dev](https://ui.dev/amiresponsive) was used to get a responsive image for README.
+
+### Content
+
+ - I, the author, have written all the content on the website.
+
+## Special Thanks
+
